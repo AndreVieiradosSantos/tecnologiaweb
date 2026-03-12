@@ -9,32 +9,123 @@
     <body>
         <!--=============== CABEÇALHO ================-->
         <header>
+            <div class="header container">
+                <img src="img/Andre.jpg" alt="Foto de [André]" width="100">
+                <div class="header-texto">
+                    <h1>
+                        André Vieira dos Santos
+                    </h1>
+                    <P><em>Estudante de Sistemas de Informação - CEUNI FAMETRO</em></P>
+
+                </div>
+            </div>
             <nav>
-                <!--Menu de navegação será preenchido na aulo 2-->
+                <ul>
+                    <li><a href="#Sobre">Sobre Mim</a></li>
+                    <li><a href="#Projetos">Projetos</a></li> 
+                    <li><a href="#Formação">Formação</a></li>
+                    <li><a href="#Contato">Contato</a></li>   
+                </ul>
             </nav>
         </header>
         <!--=============== CONTEÚDO PRINCIPAL ================-->
         <main>
             <!--Seção: sobre mim-->
             <section id="Sobre">
-                <!--Conteúdo será preenchido na aula 2-->
+                 <h2>Sobre mim</h2>
+               <p>Olá! Sou <strong> André</strong>, estudante de Sistemas de Informação.
+                  Tenho interesse em desenvolvimento web e criação de soluções digitais.</p>
+               <p>Cursando o <strong>5º período</strong> na CEUNI FAMETRO, Manaus - AM,
+                  desenvolvendo meu primeiro portfólio em <em>tecnologia web I</em>.</p>   
+               <h3>Minhas Habilidades</h3>   
+               <ul>
+                <li>HTML5 e CSS3</li>
+                <li>Lógica de Programção</li>
+                <Li>Git e GitHub</Li>
+                <li>Pacote Office</li>
+               </ul>
+               <h3>Formação Acadêmica</h3>
+               <ol>
+                <li>Ensino Médio - [Francisco Albuquerque], [2002]</li>
+                <li>Graduação em Sistemas de Informação - CEUNI FAMETRO (em andamento)</li>
+               </ol>
             </section>
             <!--Seção: Projetos-->
             <section id="projetos">
-                <!--Cards de projetos serão adicionados na aula 2-->
+              <h2>Projetos</h2>
+              <article class="card projeto">
+                <img src="img/projeto1.jpg" alt="Screenshot do Projeto 1" width="300">
+                <h3>Nome do Projeto 1</h3>
+                <p>Descrição breve das tecnologias e o objetivo do projeto</p>
+                <a href="https://github.com/AndreVieiradosSantos/projeto1"
+                target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+              </article>
+
+              <article class="card projeto">
+                <img src="img/projeto2.jpg" alt="Screenshot do Projeto 2" width="300">
+                <h3>Nome do Projeto 2</h3>
+                <p>Descrição breve das tecnologias e o objetivo do projeto</p>
+                <a href="https://github.com/AndreVieiradosSantos/projeto1"
+                target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+              </article>
             </section>
             <!--Seção: Formação e Experiência-->
             <section id="formação">
-                <!--Conteúdo de formação será preenchido na aula 2-->
+                <h2>Formação e Experiência</h2>
+                <h3>Acadêmica</h3>
+                <ul>
+                    <li><strong>Graduação em Sistemas de Informação</strong>
+                        - CEUNI FAMETRO<br>
+                        <small>2026 - Atual | Manaus - AM</small>
+                    </li>
+                    <li><strong>Ensino Médio</strong> [Franciso Albuquerque]<br>
+                    <small>[2002]</small></li>
+                </ul>
+                
+                    <h3>Cursos e Certifições</h3>
+                    <ul>
+                        <li>HTML e CSS - [Udemy,2025]</li>
+                        <li>Lógica de Programação - [Fametro, 2024]</li>
+                    </ul>
+
+                
             </section>
             <!--Seção: Contato-->
             <section id="contato">
-                <!--Formulário de contato será criado na aula 2-->
+                <h2>Entre em Contato</h2>
+                <p>Preencha o formulário e entrarei em contato em breve!</p>
+                <form action="#" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"
+                    placeholder="Seu nome completo" required>
+
+                     <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email"
+                    placeholder="Seu@email.com" required>
+
+                     <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto"
+                    placeholder="Motivo do contato">
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5"
+                    placeholder="Sua mensagem aqui..." required></textarea>
+
+                    <button type="submit">Enviar Mensagem</button>
+
+                </form>
             </section>
             </main>
             <!--================ RODAPÉ ================-->
             <footer>
-                <!--Rodapé será preenchido na aula 2-->
+                <p>&copy; 2026 André Vieira dos Santos. Todos os direitos reservados</p>
+                <ul>
+                    <li><a href="https://github.com/AndreVieiradosSantos"
+                           target=" _blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/andre-vieira-9b7a8b298"
+                           target=" _blank" rel="noopener noreferrer">Linkedin</a></li>
+
+                </ul>
             </footer>
         
     </body>
