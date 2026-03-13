@@ -1,0 +1,21 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: brown;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: o auto;
+}
+
+header{
+    padding: 40px 4%;
+    
+}
