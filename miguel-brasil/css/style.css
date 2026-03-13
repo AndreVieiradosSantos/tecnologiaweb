@@ -8,9 +8,11 @@ body {
     padding: 0;
     margin: 0;
 }
-h2{
+
+h2 {
     border-bottom: 2px solid var(--secondary-color);
 }
+
 :root {
     --primary-color: #0a101d;
     --secondary-color: #ff6b00;
@@ -25,6 +27,8 @@ header {
     align-items: center;
     padding: var(--spacing);
     justify-content: space-around;
+    border-bottom: 2px solid var(--secondary-color);
+
 }
 
 .container-header {
@@ -84,27 +88,33 @@ main {
 
 .sobre-mim {
     display: flex;
-    align-items: center;
+    margin: 50px auto;
     justify-content: center;
+    align-items: center;
     padding: var(--spacing);
     color: var(--text-color);
     background-color: var(--primary-color);
     border-radius: var(--spacing);
-    margin: 100px auto;
-    gap: var(--spacing);
-    min-height: 450px;
+
+    min-height: 350px;
     border: 3px solid #ff6b00;
 }
 
 .sobre-mim-texto {
-    max-width: 800px;
+    max-width: 750px;
+    height: 300px;
+
 }
 
 .sobre-mim-texto h1,
 h2,
-h3 {
+p {
     margin: 10px auto;
     text-align: justify;
+}
+
+.sobre-mim p{
+    font-size: var(--font-size);
 }
 
 .sobre-mim-texto h2>span {
@@ -114,12 +124,11 @@ h3 {
 .container-imagem-sobre-mim {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 800px;
+    width: 750px;
+    height: 300px;
 }
 
 .container-imagem-sobre-mim img {
-    
     width: 300px;
     border-radius: 50%;
     border: 3px solid var(--secondary-color);
@@ -130,15 +139,18 @@ h3 {
 }
 
 .projetos {
-    border-radius: var(--spacing);
     padding: var(--spacing);
     background-color: var(--primary-color);
-    border: 3px solid var(--secondary-color);
+    border-left: 3px solid var(--secondary-color);
+    border-right: 3px solid var(--secondary-color);
+    border-top: 3px solid var(--secondary-color);
+    border-top-left-radius: var(--spacing);
+    border-top-right-radius: var(--spacing);
     color: var(--text-color);
 }
 
 
-.titulo-projetos h2{
+.titulo-projetos h2 {
     width: 30%;
     text-align: center;
     font-size: 30px;
@@ -153,7 +165,7 @@ h3 {
     border-bottom: 3px solid var(--primary-color);
 }
 
-.container-projetos{
+.container-projetos {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,7 +173,7 @@ h3 {
     gap: var(--spacing);
 }
 
-.card-projetos{
+.card-projetos {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -170,19 +182,23 @@ h3 {
     max-width: 500px;
     height: 280px;
     border-radius: var(--spacing);
-    background-color: var(--secondary-color);
-    
+    border: 3px solid var(--secondary-color);
+    background-color: var(--text-color);
+
 
 }
-.card-projetos:hover{
+
+.card-projetos:hover {
     transform: translateY(-5px);
 }
-.card-projetos p{
+
+.card-projetos p {
+    color: var(--primary-color);
     text-align: justify;
 }
 
-.desenvolvido {
-    color: var(--primary-color);
+#desenvolvido {
+    color: var(--secondary-color);
     font-weight: 600;
 }
 
@@ -190,7 +206,188 @@ h3 {
     transform: translateY(-5px);
 }
 
+
+.formacao {
+
+    background-color: var(--primary-color);
+    padding: var(--spacing);
+    color: var(--text-color);
+    border-left: 3px solid #ff6b00;
+    border-right: 3px solid #ff6b00;
+
+}
+
+.titulo-formacao h2 {
+    margin-top: var(--spacing);
+    text-align: center;
+    width: 30%;
+}
+
+.formacao-container {
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing);
+}
+
+.formacao-container article {
+    max-width: 600px;
+}
+
+.formacao-container img {
+    border-radius: var(--spacing);
+    width: 200px;
+    border: 3px solid var(--secondary-color);
+}
+
 .hard-skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding: var(--spacing);
+    background-color: var(--primary-color);
+    border-left: 3px solid var(--secondary-color);
+    border-right: 3px solid var(--secondary-color);
+    color: var(--text-color);
+}
+
+.hard-titulo h2 {
+    margin: var(--spacing) auto;
+    text-align: center;
+    width: 30%;
+}
+
+.hard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.hard-container ul {
+    display: flex;
+    gap: var(--spacing);
+    flex-wrap: wrap;
+}
+
+.hard-container li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--text-color);
+    width: 200px;
+    border-radius: var(--spacing);
+    border: 2px solid var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 14px;
+    gap: 10px;
+}
+
+.hard-container li img {
+    width: 30px;
+}
+
+.hard-container li:hover {
+    transform: translateY(-5px);
+}
+
+.soft-skills {
+    padding: var(--spacing);
+    background-color: var(--primary-color);
+    border-left: 3px solid var(--secondary-color);
+    border-right: 3px solid var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    border-bottom-right-radius: var(--spacing);
+    border-bottom-left-radius: var(--spacing);
+    color: var(--text-color);
+}
+
+.soft-titulo h2 {
+    margin: var(--spacing) auto;
+    text-align: center;
+    width: 30%;
+}
+
+.soft-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.soft-container ul {
+    display: flex;
+    gap: var(--spacing);
+    flex-wrap: wrap;
+}
+
+.soft-container li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    width: 200px;
+    border-radius: var(--spacing);
+    border: 2px solid var(--text-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 14px;
+    gap: 10px;
+}
+.soft-container li:hover{
+    transform: translateY(-5px);
+}
+
+.contatos{
+    margin: 50px auto;
+    padding: var(--spacing);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: var(--spacing);
+    border: 3px solid var(--secondary-color);
+    height: 340px;
+}
+
+.titulo-contatos h2{
+    width: 30%;
+    text-align: center;
+}
+
+.container-contatos{
+    margin: 1.5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-contatos{
+    padding: var(--spacing);
+    color: var(--primary-color);
+    background-color: var(--text-color);
+    width: 380px;
+    border: 3px solid var(--secondary-color);
+    border-radius: var(--spacing);
+    margin-bottom: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap:var(--spacing);
+}
+.card-contatos img{
+    width: 30px;
+}
+.card-contatos:hover{
+    transform: translateY(-5px);
+}
+
+footer{
+    background-color: var(--primary-color);
+    padding: var(--spacing);
+    color: var(--text-color);
+}
+footer p{
+    text-align: center;
+    
 }
